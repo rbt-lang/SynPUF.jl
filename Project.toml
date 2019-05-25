@@ -4,4 +4,14 @@ authors = ["Clark Evans <cce@clarkevans.com>"]
 version = "0.1.0"
 
 [deps]
-DataDeps = "9ca5147a-7bb5-11e8-2d1a-6b423858166c"
+DataDeps = "124859b0-ceae-595e-8997-d05f6a7a8dfe"
+
+[extras]
+NarrativeTest = "9563631e-acd4-5dd8-bebb-4cf36518960d"
+
+[compat]
+julia = "1"
+DataDeps = "0.6.2"
+
+[targets]
+test = ["NarrativeTest"]
