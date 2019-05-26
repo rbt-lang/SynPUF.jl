@@ -1,9 +1,14 @@
-# test/runtests.jl
-using SynPuf, Test
+#!/usr/bin/env julia
+
+using SynPUF, Test
 
 function tests()
   @testset "Download of SynPUF" begin
-    @test 1 == 1
+    using DataDeps
+    using SynPUF
+    SynPUF.register()
+    path = datadep"synpuf_01"
+    @test path == endswith(path, "datadeps/synpuf_01")
   end
 end
 
